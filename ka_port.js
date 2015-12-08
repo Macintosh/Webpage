@@ -8,7 +8,6 @@ $(document).ready(function() {
       processing.fill(0, processing.random(0, 255), 0);
       processing.textSize(processing.random(30, 40));
       processing.text("CRACKA !", processing.random(113, 155), processing.random(90, 109));
-      console.log("Ehhhh")
       processing.textSize(20);
       processing.text("BUY CRACKA FOR CHESE !", 85, 160);
       processing.text("CRACKA TASTE GOOD !", 100, 200);
