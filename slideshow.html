@@ -1,6 +1,103 @@
 <html>
 <head>
-</style>
+  <style type="text/css">
+    .text {
+      position: absolute;
+      top: 85%;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, -50%);
+      color:grey;
+    }
+    .title {
+      color: #80CBC4;
+    }
+    .css-slideshow{
+      position: relative;
+      max-width: 1000px;
+      height: 370px;
+      margin: 5em auto .5em auto;
+    }
+    .css-slideshow figure{
+      margin: 0;
+      max-width: 1000px;
+      height: 370px;
+      background: #000;
+      position: absolute;
+    }
+    .css-slideshow img{
+      box-shadow: 0 0 2px #666;
+    }
+    .css-slideshow figcaption{
+      position: absolute;
+      top: 0;
+      color: #fff;
+      background: rgba(0,0,0, .3);
+      font-size: .8em;
+      padding: 8px 12px;
+      opacity: 0;
+      transition: opacity .5s;
+    }
+    .css-slideshow:hover figure figcaption{
+      transition: opacity .5s;
+      opacity: 1;
+    }
+    .css-slideshow-attr{
+      max-width: 1000px;
+      text-align: right;
+      font-size: .7em;
+      font-style: italic;
+      margin:0 auto;
+    }
+    .css-slideshow-attr a{
+      color: #666;
+    }
+    .css-slideshow figure{
+      opacity:0;
+    }
+    figure:nth-child(1) {
+      animation: xfade 48s 42s infinite;
+    }
+    figure:nth-child(2) {
+      animation: xfade 48s 36s infinite;
+    }
+    figure:nth-child(3) {
+      animation: xfade 48s 30s infinite;
+    }
+    figure:nth-child(4) {
+      animation: xfade 48s 24s infinite;
+    }
+    figure:nth-child(5) {
+      animation: xfade 48s 18s infinite;
+    }
+    figure:nth-child(6) {
+      animation: xfade 48s 12s infinite;
+    }
+    figure:nth-child(7) {
+      animation: xfade 48s 6s infinite;
+    }
+    figure:nth-child(8) {
+      animation: xfade 48s 0s infinite;
+    }
+
+    @keyframes xfade{
+      0%{
+        opacity: 1;
+      }
+      10.5% {
+        opacity: 1;
+      }
+      12.5%{
+        opacity: 0;
+      }
+      98% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  </style>
   <script src="http://cdnjs.cloudflare.com/ajax/libs/processing.js/1.4.16/processing.js" type="text/javascript"></script>
   <script src="https://code.jquery.com/jquery-2.1.4.js" type="text/javascript"></script>
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet"
@@ -22,12 +119,47 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><a href="home.html">Home</a></li>
+        <li><a href="blog.html">Blog</a></li>
         <li><a href="cracka.html">Cracka</a></li>
         <li class="active"><a href="slideshow.html">Slideshow <span class="sr-only">(current)</span></a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
+<div class="text">
+  <div class="title"><b>Slideshow</b></div><em>This is a slideshow of some of the things ive worked on in Khan Academy. Mouse ofer them to see a discreption.</em>
+</div>
+  <div class="css-slideshow">
+  	<figure>
+  		<img src="slides/fish.gif" alt="fish" /><figcaption><strong>Fish:</strong> This is a fish tank. When the mouse is pressed, a randomized fish appears somewhere on the screen.</figcaption>
+  	</figure>
+  	<figure>
+  		<img src="slides/rain.gif" alt="rain" /><figcaption><strong>Rain:</strong> This shows rain falling constantly. As soon as a drop hits the bottom of the screen it moves back to the top and continues falling.</figcaption>
+  	</figure>
+  	<figure>
+  		<img src="slides/stars.gif" alt="stars" /><figcaption><strong>Stars:</strong> This shows a small series of random colored stars dart in different directions off the screen.</figcaption>
+  	</figure>
+  	<figure>
+  		<img src="slides/ball.gif" alt="ball" /><figcaption><strong>8-Ball:</strong> This is a magic 8 ball. Each time the program is run, the output is different.</figcaption>
+  	</figure>
+    <figure>
+  		<img src="slides/house.gif" alt="house" /><figcaption><strong>House:</strong> This is a static house. The color of the grass was selectet at random, and is changed by running the program again.</figcaption>
+  	</figure>
+  	<figure>
+  		<img src="slides/food.gif" alt="food" /><figcaption><strong>Pie:</strong> This pie started out as a pizza, but everyone thought it was a pie. My creative vision was destroyed</figcaption>
+  	</figure>
+  	<figure>
+  		<img src="slides/drawing.gif" alt="drawing" /><figcaption><strong>Drawing:</strong> This is a simple drawing program. The different areas of the screen corrispond to different colors. The inbetewwn spaces fade from one color to the next.</figcaption>
+  	</figure>
+  	<figure>
+  		<img src="slides/clouds.gif" alt="clouds" /><figcaption><strong>Clouds:</strong> This is a simple anamation where the clouds move to the sides of the screen as the sun gets infinitely bigger to swallow us all.</figcaption>
+  	</figure>
+    <figure>
+  		<img src="slides/tomato.gif" alt="tomato" /><figcaption><strong>Tomato:</strong> This tomato is erased as you move your mouse over it.</figcaption>
+  	</figure>
+    <figure>
+  		<img src="slides/java.gif" alt="java" /><figcaption><strong>Javascript:</strong> This is a simple button. When you press on it, it displays the answer to the question.</figcaption>
+  	</figure>
+  </div>
 </body>
 </html>
